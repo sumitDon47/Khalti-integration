@@ -144,6 +144,10 @@ app.get("/create-item", async (req, res) => {
         inStock: true,
         category: "vayo pardaina"
     })
+    re.json({
+        success: true,
+        item: itemData
+    })
 })
 
 app.listen(3001, () => {
