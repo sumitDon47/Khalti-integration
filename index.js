@@ -137,6 +137,15 @@ app.get("/complete-khalti-payment", async (req, res) => {
     }
 });
 
+app.get("/create-item", async (req, res) => {
+    let itemData = await Item.create({
+        name: "Headphones",
+        price: 500,
+        inStock: true,
+        category: "vayo pardaina"
+    })
+})
+
 app.listen(3001, () => {
     console.log("Backend listening at http://localhost:3001");
 });
