@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 if (process.env.NODE_ENV !== "production") {
     require("dotenv").config();
-    f
+
 }
 connectToMongo()
 
