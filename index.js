@@ -144,7 +144,7 @@ app.get("/create-item", async (req, res) => {
         inStock: true,
         category: "vayo pardaina"
     })
-    re.json({
+    res.json({
         success: true,
         item: itemData
     })
